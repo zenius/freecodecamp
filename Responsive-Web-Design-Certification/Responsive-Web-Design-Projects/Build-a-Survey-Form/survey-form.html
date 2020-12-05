@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TSN: Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="survey-form.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1 id="title">TechSkillsNepal Survey Form</h1>
+      <p id="description">Your feedback is our asset. Help us improve our platform.</p>
+    </header>
+   
+
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+       <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age<span>(optional)</span></label>
+        <input type="number" name="age" id="number" placeholder="Age" min="10" max="99"> 
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Which option best describes your current role?</label>
+
+        <select id="dropdown" name="role" required>
+          <option selected value="" disabled>Select an option</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Would you recommend TechSkillsNepal to a friend?</label>
+
+        <label>
+          <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked> Definitely
+        </label>
+        <label>
+          <input type="radio" name="user-recommend" value="maybe" class="input-radio"> Maybe
+        </label>
+        <label>
+          <input type="radio" name="user-recommend" value="not-sure" class="input-radio"> Not Sure
+        </label>
+      </div>
+
+      <div class="form-group">
+         <label>What would like to see improved?</label>
+
+        <label>
+          <input type="checkbox" name="prefer" value="computer-literacy program" class="input-checkbox"> Computer Literacy Program
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="math-program" class="input-checkbox"> Math Competition Program
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="additional-program" class="input-checkbox"> Additional Program
+        </label> 
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form> 
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+
+

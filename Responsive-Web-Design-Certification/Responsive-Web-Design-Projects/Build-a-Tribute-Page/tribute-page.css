@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+
+main {
+  margin: auto;
+  background-color: #eee; 
+}
+
+#image {
+  max-width: 100%; 
+  display: block; 
+  margin: auto;
+  height: auto;
+}
+
+#tribute-info p, h3{ 
+  text-align: left;
+  max-width: 550px;
+  margin: 0 auto 10px auto;
+  padding: 0 10px;
+}
